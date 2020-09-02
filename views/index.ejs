@@ -1,0 +1,40 @@
+<%- include("partials/header") %>
+<div class="formargin"></div>
+<div class="ui huge header">Myself, Ingaavu</div>
+<div class="ui top attached segment ">
+  <div class="ui divided items">
+    <% blogs.forEach((blog)=>{ %>
+    <div class="item">
+      <div class="image">
+        <img src="<%=blog.image%>" class="ui image  fluid">
+      </div>
+      <div class="content">
+
+        <a class="ui header " href="/blogs/<%=blog._id%>">
+          <%= blog.title%>
+        </a>
+
+        <div class="meta">
+          <span> <%= blog.created.toDateString() %></span>
+        </div>
+        <!-- <div class="description">
+          <p><%=blog.body.slice(0,100)+'...'%></p>
+        </div> -->
+        <div class="extra">
+          <a class="ui floated basic violet button " href="/blogs/<%=blog._id%>">
+            Read more
+          </a>
+  
+        </div>
+      </div>
+
+
+
+      </a>
+    </div>
+
+    <%})%>
+  </div>
+</div>
+
+<%- include("partials/footer") %>

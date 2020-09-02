@@ -1,0 +1,15 @@
+body{
+    
+        font-family: 'Courier Prime', monospace; 
+        margin: auto 10vw;
+   
+}
+i.icon{
+    font-size: 2em;
+}
+.container.main{
+        margin-top: 7em;
+}
+.formargin{
+    margin-top: 7em;
+}
